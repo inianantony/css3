@@ -7,6 +7,23 @@
       form [type] {
         border: 8px dotted brown;
       }
+      label[mylbl="dummy"] {
+        font-size: larger;
+        font-weight: bold;
+      }
+      label[mylbl*="ywhe"] {
+        color: aqua;
+      }
+      label[mylbl^="start"] {
+        color: blueviolet;
+      }
+      label[mylbl$="with"] {
+        color: chartreuse;
+      }
+      form input[type][value="ClickMe"] {
+        border: 1px solid gold;
+        color: gold;
+      }
     </style>
   </head>
   <body>
@@ -17,7 +34,11 @@
         <option>Item1</option>
       </select>
       <input type="button" value="Button" />
-      <label>Some Label</label>
+      <input type="button" value="ClickMe" />
+      <label mylbl="dummy">Some Label</label>
+      <label mylbl="endswith">Some Label</label>
+      <label mylbl="starts">Some Label</label>
+      <label mylbl="anywhere">Some Label</label>
     </form>
 
     <div>
