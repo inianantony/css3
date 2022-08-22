@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <style>
+      p::before {
+        content: "I am ";
+        font-style: italic;
+      }
+      p::after {
+        content: " css";
+      }
+      .example1::before {
+        content: "\26F9";
+      }
+      .example1::after {
+        content: attr(data-name);
+      }
+      a[href^="http"]:hover {
+        position: relative;
+      }
+      a[href^="http"]:hover::after {
+        content: attr(href);
+        position: absolute;
+        top: 1em;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: 3px 5px;
+        line-height: 1;
+      }
+      .quote {
+        border-radius: 10px;
+        position: relative;
+        padding: 20px;
+        background-color: red;
+        color: white;
+      }
+      .quote::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-top-color: red;
+        bottom: -39px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>learning</p>
+    <div class="example1" data-name="John Doe">My name is&nbsp;</div>
+    <a href="https://www.faralloncapital.com/">Farallon Website</a>
+    <span
+      >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Penatibus et magnis
+      dis parturient. Eget dolor morbi non arcu risus. Tristique magna sit amet
+      purus gravida quis blandit. Auctor urna nunc id cursus metus aliquam
+      eleifend mi in. Tellus orci ac auctor augue mauris augue neque gravida.
+      Nullam vehicula ipsum a arcu. Nullam ac tortor vitae purus faucibus ornare
+      suspendisse sed nisi. Cursus in hac habitasse platea dictumst. Egestas dui
+      id ornare arcu. Dictumst vestibulum rhoncus est pellentesque</span
+    >
+    <div class="quote">This is a quote☜</div>
+  </body>
+</html>
