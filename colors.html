@@ -26,8 +26,8 @@
         position: absolute;
         top: 20px;
         left: 20px;
-        box-shadow: 20px 10px rgba(0, 0, 0, 0.3);
-        text-shadow: 20px -20px rgba(0, 0, 0, 0.3);
+        box-shadow: 20px 10px 1px rgba(0, 0, 0, 0.3);
+        text-shadow: 20px -20px 1px rgba(0, 0, 0, 0.3);
         background-color: white;
         color: black;
       }
@@ -35,10 +35,17 @@
         position: absolute;
         top: 80px;
         left: 50px;
-        box-shadow: 20px 10px #999;
-        text-shadow: 20px -20px #999;
+        box-shadow: 20px 10px 5px #999;
+        text-shadow: 20px -20px 2px #999;
         background-color: white;
         color: black;
+      }
+      .shadow {
+        width: 80%;
+        margin: 20px;
+        border: dashed;
+        height: 40px;
+        box-shadow: 0px 0px 20px 5px red;
       }
     </style>
   </head>
@@ -55,5 +62,6 @@
         </div>
       </div>
     </div>
+    <div class="shadow"></div>
   </body>
 </html>
