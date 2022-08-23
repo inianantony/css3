@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <style>
+      .module {
+        background: white;
+        border: 1px solid #ccc;
+        margin: 3%;
+      }
+
+      .module > div {
+        height: 500px;
+      }
+
+      .content {
+        color: white;
+        background: repeating-linear-gradient(
+          45deg,
+          #606dbc,
+          #606dbc 10px,
+          #465298 10px,
+          #465298 20px
+        );
+        position: relative;
+      }
+      .trans {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        box-shadow: 20px 10px rgba(0, 0, 0, 0.3);
+        text-shadow: 20px -20px rgba(0, 0, 0, 0.3);
+        background-color: white;
+        color: black;
+      }
+      .trans2 {
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        box-shadow: 20px 10px #999;
+        text-shadow: 20px -20px #999;
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="module">
+      <div class="content">
+        <div class="trans">
+          The background will be seen through and it acts like a shadow casted
+          on a background. You can notice it from the stripes
+        </div>
+        <div class="trans2">
+          The background will NOT be seen through and it acts patch applied upon
+          background. You can notice it from the stripes
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
