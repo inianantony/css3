@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <style>
+      body {
+        font-size: 2em;
+      }
+      .mainDiv::after {
+        content: " a desktop";
+      }
+      /* ----------- iPhone 4 and 4S ----------- */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+        .mainDiv::after {
+          content: " iPhone 4 and 4S";
+        }
+      }
+
+      /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+        .mainDiv::after {
+          content: " iPhone 5, 5S, 5C and 5SE";
+        }
+      }
+
+      /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+        .mainDiv::after {
+          content: " iPhone 6, 6S, 7 and 8";
+        }
+      }
+
+      /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+      @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+        .mainDiv::after {
+          content: " iPhone 6+, 7+ and 8+";
+        }
+      }
+
+      /* ----------- iPhone X ----------- */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+        .mainDiv::after {
+          content: " iPhone X";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainDiv">The device is</div>
+    <a href="https://mediaqueri.es/" target="_blank">https://mediaqueri.es/</a>
+  </body>
+</html>
