@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <style>
+      .translate1 {
+        transform: translate(100px, 10px);
+        border: dashed;
+        width: 20%;
+      }
+      .translate2 {
+        transform: rotate(30deg);
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        border: dashed;
+      }
+      .translate3 {
+        position: absolute;
+        transform: scale(4);
+        border: dashed;
+        top: 400px;
+        left: 100px;
+      }
+      .translate4 {
+        position: absolute;
+        transform: skewX(15deg);
+        border: dashed;
+        top: 600px;
+        left: 100px;
+      }
+      .translate5 {
+        position: absolute;
+        transform: rotate(30deg) scale(4) skewX(3deg);
+        transform-origin: bottom right;
+        border: dashed;
+        top: 800px;
+        left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="translate1">😃</div>
+    <div class="translate2">😃</div>
+    <div class="translate3">😃</div>
+    <div class="translate4">😃</div>
+    <div class="translate5">😃</div>
+  </body>
+</html>
