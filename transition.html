@@ -13,17 +13,25 @@
         transform-origin: 0 0;
         background-color: rgba(255, 255, 255, 0.8);
       }
-      nav ul li {
-        list-style: none;
+      .slide nav ul,
+      .slide nav ul li {
+        margin: 0;
+        padding: 0;
+      }
+      .slide nav ul li {
+        list-style-type: none;
+        background-color: #c7573a;
+        color: white;
+        margin: 0;
+        padding: 3px 5px;
+        border: 1px solid #fff;
       }
       nav > ul > li {
         display: inline-block;
         position: relative;
-        background-color: indianred;
-        color: white;
       }
       nav ul ul {
-        transform: scale(1, 1);
+        transform: scale(1, 0);
         transform-origin: top center;
         transition: 0.2s linear 50ms;
         position: absolute;
@@ -36,24 +44,47 @@
   </head>
   <body>
     <div class="code">This is an example div</div>
-    <nav>
-      <ul>
-        <li>
-          About
-          <ul>
-            <li>About me</li>
-            <li>About my pet</li>
-            <li>About my home</li>
-          </ul>
-        </li>
-        <li>
-          Topics
-          <ul>
-            <li>lucky me</li>
-            <li>learn css</li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <section class="slide" style="min-height: 400px">
+      <nav>
+        <ul>
+          <li>
+            About
+            <ul>
+              <li>Me</li>
+              <li>You</li>
+              <li>Them</li>
+              <li>Nobody</li>
+            </ul>
+          </li>
+          <li>
+            Posts
+            <ul>
+              <li>Door Post</li>
+              <li>Wall hanging</li>
+              <li>Stair Banister</li>
+              <li>Washington</li>
+            </ul>
+          </li>
+          <li>
+            Topics
+            <ul>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>HTML5</li>
+              <li>SEO</li>
+            </ul>
+          </li>
+          <li>
+            Events
+            <ul>
+              <li>Party</li>
+              <li>Dinner</li>
+              <li>Hike</li>
+              <li>Foo Camp</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </section>
   </body>
 </html>
