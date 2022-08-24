@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style>
+      .pencil {
+        width: 100px;
+        text-align: right;
+        color: red;
+        border-bottom: 10px solid;
+        animation-name: drawALine;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 2;
+        animation-delay: -2s;
+        animation-direction: alternate;
+        animation-fill-mode: both;
+      }
+      .pencil::after {
+        content: "✎";
+        /* position: absolute; */
+        /* bottom: 20px;
+        right: 10px; */
+      }
+      .pencil:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes drawALine {
+        0% {
+          width: 0;
+          color: green;
+        }
+        100% {
+          width: 100%;
+          color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pencilId" class="pencil"></div>
+    <script>
+      document
+        .getElementById("pencilId")
+        .addEventListener("animationstart", (event) => {
+          console.log(event);
+        });
+      document
+        .getElementById("pencilId")
+        .addEventListener("animationend", (event) => {
+          console.log(event);
+        });
+    </script>
+  </body>
+</html>
